@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://guogxy.github.io/plant-journal/sitemap.xml

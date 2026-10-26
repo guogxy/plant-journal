@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>开源组件与示例素材 — 植物记录</title><meta name="description" content="关于端侧补帧模型、示例照片及其来源和授权说明。">
+<meta name="theme-color" content="#f7f8f1"><meta name="color-scheme" content="light">
+<link rel="canonical" href="https://guogxy.github.io/plant-journal/zh/licenses/">
+<link rel="alternate" hreflang="en" href="https://guogxy.github.io/plant-journal/en/licenses/">
+<link rel="alternate" hreflang="zh-Hans" href="https://guogxy.github.io/plant-journal/zh/licenses/">
+<link rel="alternate" hreflang="x-default" href="https://guogxy.github.io/plant-journal/">
+<meta property="og:type" content="website"><meta property="og:title" content="开源组件与示例素材 — 植物记录">
+<meta property="og:description" content="关于端侧补帧模型、示例照片及其来源和授权说明。"><meta property="og:url" content="https://guogxy.github.io/plant-journal/zh/licenses/">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="植物记录">
+<meta name="twitter:card" content="summary"><link rel="stylesheet" href="../../assets/site.css">
+<link rel="icon" type="image/png" href="../../assets/app-icon.png">
+<link rel="apple-touch-icon" href="../../assets/app-icon.png">
+</head>
+<body><a class="skip-link" href="#main">跳转到正文</a>
+<header class="site-header"><div class="wrap nav-inner">
+<a class="wordmark" href="../../zh/" aria-label="植物记录"><img class="brand-icon" src="../../assets/app-icon.png" width="34" height="34" alt="">植物记录</a>
+<nav class="nav-links" aria-label="主导航"><a href="../../zh/#workflow">记录方式</a><a href="../../zh/#editing">成长影片</a><a href="../../zh/#data">资料与备份</a><a href="../../zh/support/">使用支持</a></nav>
+<a class="language" href="../../en/licenses/" hreflang="en" lang="en" aria-label="Switch to English">English</a>
+</div></header>
+<main id="main"><div class="wrap">
+<header class="document-header"><p class="eyebrow">植物记录</p><h1>开源组件与示例素材</h1><p>关于端侧补帧模型、示例照片及其来源和授权说明。</p><p class="date">最后更新 · 2026 年 10 月 26 日</p></header>
+<div class="document-grid"><nav class="toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#model">Practical-RIFE 补帧模型</a></li><li><a href="#mit">MIT 许可声明</a></li><li><a href="#imagery">示例照片</a></li><li><a href="#platform">平台名称与声明</a></li></ol></nav><div class="prose"><section id="model"><h2>Practical-RIFE 补帧模型</h2><p>App 内置 <strong>Practical-RIFE 4.25-lite</strong> 的 Core ML 转换版本，用于可选端侧补帧。上游项目为 <a href="https://github.com/hzwer/Practical-RIFE">hzwer/Practical-RIFE</a>；权重来自 <a href="https://huggingface.co/Comfy-Org/frame_interpolation/tree/219da3c9d8c357ceaf457fc1d5932c6e861b8dee">Comfy-Org 纯张量镜像</a>中的 rife_v4.25_lite.safetensors，不含 ComfyUI 应用代码。</p><p>上游将链接的训练模型声明为适用其 MIT 许可证，版权与许可全文如下。App 的 FP16 转换使用 512 × 512 模型画布及保留比例的预处理，因此更大的影片输出尺寸不代表模型生成了对应原生分辨率的细节。模型随 App 内置，使用时无需联网下载。</p></section><section id="mit"><h2>MIT 许可声明</h2><pre class="license-text">MIT License
+
+Copyright (c) 2021 hzwer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre><p><a href="../../assets/RIFE-LICENSE.txt">下载许可文本</a></p></section><section id="imagery"><h2>示例照片</h2><p>App 与官网使用随包提供的 Unsplash 照片作展示与说明，并标注为示例，不表述为真实生长序列或用户评价。照片从本地文件读取，不在运行时请求 Unsplash。</p><ul><li><a href="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">植物参照示例照片</a></li><li><a href="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc">第二张植物示例照片</a></li></ul><p>照片于 2026 年 10 月 24 日依据 <a href="https://unsplash.com/license">Unsplash License</a>获取。官网截图用开发与测试资料及参照照片，展示 App 实际的对齐界面；其中植物档案不是用户案例。</p></section><section id="platform"><h2>平台名称与声明</h2><p>Apple、iPhone、iPad、iCloud、照片、日历、提醒事项与 Core ML 指代 Apple 的产品或技术。本 App 独立开发，不代表获得 Apple、Unsplash 或模型作者的背书。</p><p>如对署名或许可声明有疑问，请联系 <a href="mailto:gggxxxyyyy@gmail.com">gggxxxyyyy@gmail.com</a>。相应第三方素材以其自身许可证为准，本站条款不替代该许可证。</p></section><p class="visual-caption">另见：<a href="../../zh/privacy/">隐私政策</a> · <a href="../../zh/terms/">使用条款</a> · <a href="../../zh/support/">使用支持</a></p></div></div>
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<div class="footer-top"><div><a class="wordmark" href="../../zh/">植物记录</a><p style="font-size:12px;color:var(--muted);margin-top:8px">留心一片新叶，留下这一段成长。</p></div><nav class="footer-links" aria-label="网站信息"><a href="../../zh/privacy/">隐私政策</a><a href="../../zh/terms/">使用条款</a><a href="../../zh/support/">使用支持</a><a href="../../zh/licenses/" aria-current="page">开源与素材</a></nav></div>
+<div class="footer-bottom"><p>© 2026 植物记录 · iPhone 与 iPad</p><p>本站由 GitHub Pages 提供静态托管。</p></div>
+</div></footer>
+</body></html>

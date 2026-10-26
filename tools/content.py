@@ -1,0 +1,221 @@
+"""Reviewed bilingual copy for the static Plant Journal website."""
+
+CONTACT = "gggxxxyyyy@gmail.com"
+UPDATED = {"en": "October 26, 2026", "zh": "2026 年 10 月 26 日"}
+
+UI = {
+    "en": {
+        "lang": "en", "name": "Plant Journal", "other": "简体中文", "skip": "Skip to content",
+        "nav": [("workflow", "The workflow"), ("editing", "The film"), ("data", "Your records")],
+        "support": "Support", "privacy": "Privacy", "terms": "Terms", "licenses": "Acknowledgments",
+        "footer": "A little attention. A lasting record.", "copyright": "Plant Journal · iPhone & iPad",
+        "status": "Release in preparation", "toc": "On this page", "updated": "Last updated",
+        "site_note": "Static website hosted on GitHub Pages.",
+    },
+    "zh": {
+        "lang": "zh-Hans", "name": "植物记录", "other": "English", "skip": "跳转到正文",
+        "nav": [("workflow", "记录方式"), ("editing", "成长影片"), ("data", "资料与备份")],
+        "support": "使用支持", "privacy": "隐私政策", "terms": "使用条款", "licenses": "开源与素材",
+        "footer": "留心一片新叶，留下这一段成长。", "copyright": "植物记录 · iPhone 与 iPad",
+        "status": "正在准备发布", "toc": "本页内容", "updated": "最后更新",
+        "site_note": "本站由 GitHub Pages 提供静态托管。",
+    },
+}
+
+HOME = {
+    "en": {
+        "title": "Plant Journal — Make slow growth visible",
+        "description": "Return to the same view, record plant care, and turn your plant photos into a considered time-lapse. An app for iPhone and iPad, currently in preparation.",
+        "eyebrow": "For the changes you almost miss",
+        "headline": "Slow growth.<br>A story worth keeping.",
+        "intro": "Come back to the same view. Notice the new leaf. Turn a little attention, day after day, into a film of your plant’s growth.",
+        "cta": "Explore the workflow", "secondary": "Get help",
+        "frame_title": "Find your way back to the frame", "frame_sub": "A reference for your next photo",
+        "photo_alt": "Green plant leaves against a pale background, with an illustrative reference frame",
+        "photo_caption": "Example photograph from Unsplash. Reference frame illustrated for this website; this is not a growth sequence.",
+        "bands": [("A familiar frame", "Reference photo & alignment guides"), ("A rhythm you choose", "Photo plans & care reminders"), ("A film with intention", "Originals, correction & optional AI")],
+        "workflow_label": "One small habit, a fuller story",
+        "workflow_title": "From the first photo<br>to the next new leaf.",
+        "workflow_intro": "A photo is the beginning. A consistent view, a practical plan, and a little context make it a record you can return to.",
+        "steps": [
+            ("Set your starting point", "Create a plant record and take or import a first photo. Confirm the reference outline and a stable area of the pot to guide your next shot."),
+            ("Build a sensible rhythm", "Plan from the subject, recording period, or finished film length. Connect the plan to a photo reminder, then add watering, feeding, pruning, or other care tasks."),
+            ("Keep the changes together", "Put photos, observations, and completed care in one timeline. Compare the first and latest view, review recent records, and choose what belongs in your film."),
+        ],
+        "alignment_label": "A reference that stays useful",
+        "alignment_title": "The plant can change.<br>Your viewpoint can stay.",
+        "alignment_intro": "A translucent reference and an assisted outline help you return to your composition. Confirm the guide yourself, especially when leaves overlap or the background is busy.",
+        "alignment_features": [
+            ("Anchor to what stays still", "Use the pot as a stable reference, rather than trying to make every growing leaf match."),
+            ("Check before you commit", "Review composition, available space, and a short test capture before an interval session."),
+            ("Leave room for the next leaf", "Preview the stabilization crop and its safe border before exporting."),
+        ],
+        "screenshot_alt": "Development app screen showing an extracted dashed plant outline and adjustable pot reference",
+        "screenshot_caption": "Development screenshot in Chinese, using an example photograph and test record. It demonstrates the reference tools, not a customer result.",
+        "edit_label": "A little polish. Your choice.", "edit_title": "Keep the character.<br>Choose the finish.",
+        "edit_intro": "Preview the result before committing to an export. Keep original frames or choose the adjustments that suit this sequence.",
+        "edit_cards": [
+            {"label": "The look", "title": "Smoother light.<br>Still your plant.", "body": "Choose reference-area deflicker, color alignment, and plant color protection. See the crop cost of stabilization, then decide what to apply.", "options": [("Exposure & color correction", "Optional"), ("Plant color protection", "Optional"), ("Stabilization & crop", "Preview first")]},
+            {"label": "The pace", "title": "Real time.<br>Or a story rhythm.", "body": "Organize the film by actual photo times or adjust the pace of selected sections. Review suggested highlights yourself. AI interpolation is optional and generated sections remain identifiable.", "options": [("Real time / story rhythm", "Choose"), ("Growth highlight candidates", "You confirm"), ("On-device AI interpolation", "Off by default")]},
+        ],
+        "ai_note": "AI creates intermediate images; it can distort leaves or invent transitions. It does not measure growth or replace the original photos. With or without correction, your source photos remain available in the app.",
+        "data_label": "A record you can take care of", "data_title": "Keep the archive.<br>Know where it goes.",
+        "data_intro": "Photos and records live in the app’s device storage. Make a local backup, export a film, or choose a private iCloud backup when you want another copy.",
+        "data_notes": [
+            ("A portable local backup", "Export a .plantbackup archive. Recovery checks its files and restores an independent copy; it does not merge or replace an existing plant record."),
+            ("iCloud is a deliberate choice", "Private iCloud backup starts off. Enabling it uploads your photos and plant records, uses your iCloud storage, and runs while the app is in the foreground. Restore is manual, not live multi-device syncing."),
+            ("Sharing happens when you choose", "Calendar and Reminders export, video sharing, and backup destinations are initiated by you. Other apps and services then handle the copies you give them."),
+        ],
+        "data_link": "Read the full privacy policy", "closing_label": "Made for patient observation",
+        "closing_title": "Make room for a little growth.", "closing_body": "Plant Journal for iPhone and iPad is in preparation. For questions about the app, contact support.", "closing_cta": "Contact support",
+    },
+    "zh": {
+        "title": "植物记录 — 把慢慢生长，留成一段影片",
+        "description": "用熟悉的机位拍下植物的变化，记录养护与日常，再把照片制作成可控制节奏的成长延时。适用于 iPhone 与 iPad，正在准备发布。",
+        "eyebrow": "为那些差一点错过的变化",
+        "headline": "慢慢生长，<br>好好留下。",
+        "intro": "回到熟悉的机位，发现刚展开的新叶。把一天一点的留心，接成一段看得见的成长。",
+        "cta": "看看怎样记录", "secondary": "使用支持",
+        "frame_title": "让下一张，回到熟悉的位置", "frame_sub": "留一个参照，等下一次变化",
+        "photo_alt": "浅色背景中的绿色植物，叠加用于说明的拍摄参照框",
+        "photo_caption": "Unsplash 示例照片，参照框为官网功能示意；这不是植物生长序列。",
+        "bands": [("找到相似机位", "首张参照 · 辅助轮廓"), ("建立记录节奏", "拍摄计划 · 养护提醒"), ("留下一段成长", "原片 · 可选矫正与 AI")],
+        "workflow_label": "从一点习惯，到一段成长",
+        "workflow_title": "从第一张照片，<br>到下一片新叶。",
+        "workflow_intro": "照片是起点。相近的构图、合适的拍摄节奏，加上当天的观察，让它成为值得回看的记录。",
+        "steps": [
+            ("留好第一次的参照", "建立植物档案，拍摄或导入第一张照片。确认辅助轮廓，再选择花盆上相对稳定的区域，为下一次构图留下参照。"),
+            ("安排适合它的节奏", "根据拍摄对象、记录周期或希望的成片时长制定计划，联动拍照提醒；也能加入浇水、施肥、修剪等养护任务。"),
+            ("把变化放在一起看", "照片、观察与已完成的养护留在时间线里。对比第一次与最新的画面，回看一段记录，再决定哪些照片进入影片。"),
+        ],
+        "alignment_label": "让参照跟得上生长",
+        "alignment_title": "植物在变化，<br>机位尽量不变。",
+        "alignment_intro": "半透明参照与辅助轮廓，帮你找回相近的构图。叶片重叠或背景复杂时，仍可以亲自确认和调整参照。",
+        "alignment_features": [
+            ("对齐不容易变化的地方", "用花盆作为稳定参照，避免让每一片新长出的叶子都去迁就旧轮廓。"),
+            ("正式拍摄前，先检查一次", "短试拍帮助检查构图、可用空间与处理情况，再开始间隔拍摄。"),
+            ("给新叶留出边界", "导出前先看稳像会裁去多少边缘，用安全边界判断构图是否合适。"),
+        ],
+        "screenshot_alt": "开发版本中，自动提取的植物虚线轮廓与可以调整的花盆参照框",
+        "screenshot_caption": "开发版本实拍界面，使用示例照片与测试记录，展示参照工具；不代表真实用户的生长成果。",
+        "edit_label": "保留原来的样子，也留一点选择", "edit_title": "画面更顺，<br>仍是你的植物。",
+        "edit_intro": "先预览，再导出。保留全部原片，或为这一段照片选择合适的矫正与节奏。",
+        "edit_cards": [
+            {"label": "画面的质感", "title": "平衡光线，<br>留住叶色。", "body": "选择参考区域去闪烁、颜色对齐与植物颜色保护。先看稳像的裁切代价，再决定是否应用。", "options": [("曝光平滑与颜色矫正", "可选"), ("植物颜色保护", "可选"), ("运动稳像与裁切", "先预览")]},
+            {"label": "影片的节奏", "title": "按真实时间，<br>或按故事节奏。", "body": "按实际拍摄时间组织影片，也能调整部分片段的速度。精彩片段先推荐、由你确认；AI 补帧可选开启，生成片段保留可识别标记。", "options": [("真实时间 / 故事节奏", "自主选择"), ("生长精彩片段候选", "由你确认"), ("端侧 AI 补帧", "默认关闭")]},
+        ],
+        "ai_note": "AI 会生成中间画面，可能扭曲叶片或推测并未拍下的过渡，不能用于测量生长或替代真实照片。无论是否选择矫正，原始照片都会在 App 中保留。",
+        "data_label": "也照顾好这份记录", "data_title": "留好资料，<br>知道它去了哪里。",
+        "data_intro": "照片与记录存放在 App 的设备存储中。可以制作本地备份、导出影片，也可以选择私人 iCloud 备份，多留一份副本。",
+        "data_notes": [
+            ("可带走的本地备份", "导出 .plantbackup 归档，恢复时检查文件，并建立独立副本；不会合并或覆盖已有植物档案。"),
+            ("iCloud，由你决定开启", "私人 iCloud 备份默认关闭。开启后会上传照片与植物资料，占用你的 iCloud 空间，并在 App 前台运行时触发。需要主动恢复，不是多设备实时同步。"),
+            ("分享，在你主动操作之后", "日历与提醒事项导出、影片分享和备份保存位置，由你发起选择。副本交给其他 App 或服务后，也由其继续管理。"),
+        ],
+        "data_link": "查看完整隐私政策", "closing_label": "为耐心观察而做",
+        "closing_title": "给一点生长，留一点时间。", "closing_body": "植物记录 iPhone 与 iPad 版本正在准备发布。关于使用与资料处理的问题，可以联系支持。", "closing_cta": "联系使用支持",
+    },
+}
+
+PAGES = {
+    "en": {
+        "privacy": {
+            "title": "Privacy Policy", "intro": "How Plant Journal handles plant photos, care records, optional iCloud backups, and this website’s visitors.",
+            "sections": [
+                ("scope", "Scope and contact", f'<p>This policy covers the Plant Journal app for iPhone and iPad and its official website. The app is currently in preparation. Questions about privacy or a request concerning information you sent us can be emailed to <a href="mailto:{CONTACT}">{CONTACT}</a>.</p><p>Plant Journal does not require an app account. It contains no advertising, tracking, or third-party analytics SDK. We do not operate a separate photo-upload server.</p>'),
+                ("device", "Information on your device", '<p>The app stores the content you add or create: plant names and settings, photos and their available dates or metadata, reference guides, notes, care history and schedules, movie settings, generated videos, and backup information. It also stores preferences and the identifiers needed to manage local records and optional cloud snapshots.</p><p>Original image files are retained without stripping their embedded metadata. The app reads the capture date and does not request location permission, but an imported original can still contain camera, device, date, or geographic EXIF metadata. That metadata can remain with originals included in exports or iCloud backups. Review the source files before sharing.</p><p>Image analysis, alignment assistance, correction, highlight suggestions, and optional AI interpolation run on the device. The bundled interpolation model does not require a runtime download or a third-party AI API. Intermediate images may be generated and should not be treated as observed plant changes.</p><p>The app may check available storage and keep working files to complete previews, exports, or backups. Removing a plant or photo from the app does not remove copies already exported to Photos, Files, another app, a system device backup, or an existing cloud snapshot.</p>'),
+                ("permissions", "Permissions you choose", '<ul><li><strong>Camera:</strong> used to take photos when you start a capture.</li><li><strong>Photos:</strong> used when you select photos to import or choose to save an exported result. System permissions and the photo picker limit access as provided by iOS.</li><li><strong>Notifications:</strong> used for local photo and care reminders. Permission, Focus settings, and system scheduling can affect delivery.</li><li><strong>Calendar and Reminders:</strong> used when you explicitly export a plan or task. Permission is requested for the relevant feature. These are separate copies managed by those apps; changing or deleting an item in one place may not update the other.</li></ul><p>You can review permissions in iOS Settings. Denying a permission can make its related feature unavailable; other available features can still be used.</p>'),
+                ("icloud", "Optional private iCloud backup", '<p><strong>iCloud backup is off by default.</strong> If you enable it and a usable iCloud account and connection are available, the app uploads backup snapshots and associated media to its private CloudKit database for your Apple Account. This includes photos, plant records, notes, care information, movie recipes and generated media included in the archive, as well as a device identifier, device name, and backup time used to distinguish snapshots.</p><p>This uses network access and your iCloud storage. Apple processes iCloud service and account information under its own policies. The app’s automatic backup runs while the app is active in the foreground; completion depends on network access, available space, account status, and service availability. It is backup and manual recovery, not continuous two-way synchronization.</p><p>Normally the app keeps the latest three complete snapshots per device when cleanup succeeds. A failed cleanup can leave more snapshots. Older shared media that is no longer referenced is not automatically reclaimed, to avoid deleting files another device may still use; it may continue to occupy your iCloud storage until you explicitly delete the app’s cloud backups.</p><p><strong>Turning backup off stops future uploads; it does not delete earlier cloud copies.</strong> The app’s Delete All Cloud Backups action deletes this app’s cloud snapshots and media across devices and disables automatic backup on the current device. Turn backup off on your other devices first, or they may upload again. Check that deletion succeeds. Deletion and retention within Apple’s infrastructure are also governed by Apple’s service policies.</p><p>Restoring a selected snapshot creates independent local copies instead of merging with existing records. iOS system device backup is separate from this optional in-app feature. See <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>'),
+                ("sharing", "Exports and other services", '<p>You choose whether to export a film, save a local backup file, or send content through the system share sheet. Photos, videos, and archives can contain plant names, notes, dates, image metadata, or other personal content you included. Review the content and destination before sharing.</p><p>When you choose a cloud drive, Photos service, calendar account, email provider, or another app, that service can store or transmit the copy under its own settings and policies. Plant Journal cannot recall a copy already shared or delete it from someone else’s device.</p>'),
+                ("retention", "Retention, deletion, and support", '<p>Local records remain until you delete them or remove the app’s local data. Uninstalling can remove the local archive; do not rely on uninstalling to remove exported copies or iCloud snapshots. Keep a verified backup of records you want to retain.</p><p>If you email support, we receive your email address, message, and the attachments you choose to send. We use them to respond and investigate the request, retain them only as needed for support and legitimate legal or security purposes, and do not use them for advertising. Do not send a full plant archive or sensitive photos unless necessary. You can request deletion of support correspondence through the contact above, subject to applicable retention requirements.</p><p>We cannot retrieve or delete records stored only on your device or in your private iCloud database for you; use the app and Apple’s account and storage controls. Depending on your location, you may have rights relating to information we hold about you. Contact support to exercise them.</p>'),
+                ("website", "This website", '<p>This is a static website hosted on GitHub Pages. We do not add analytics scripts, advertising trackers, third-party fonts, embedded social widgets, contact forms, or our own cookies. There is no app-content upload feature on this website.</p><p>GitHub may process basic request information such as IP address, browser/device details, requested pages, and access times to provide and secure its hosting service. Its handling is described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. External links, including email links, are handled by the service you choose.</p>'),
+                ("changes", "Policy changes", '<p>We will update this page when the app or its data handling changes and revise the date above. When a change requires a new permission or consent, the relevant app or system flow will request it. The current policy remains available from the app and this website.</p>'),
+            ],
+        },
+        "terms": {
+            "title": "Terms of Use", "intro": "The conditions for using Plant Journal, its planning tools, generated films, and this website.",
+            "sections": [
+                ("scope", "Using Plant Journal", '<p>Plant Journal helps you document plants, plan photo and care routines, and make time-lapse films. These terms cover the app and this website. Use them only in ways permitted by applicable law, your rights to the content, and the platform’s rules.</p><p>For an App Store distribution, the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard Licensed Application End User License Agreement</a> applies where no custom EULA is supplied. These product-specific terms complement it; mandatory consumer protections and applicable law remain in effect.</p>'),
+                ("content", "Your photos and records", '<p>You retain your rights in photos, notes, and other original content you provide. You are responsible for having permission to import, process, and share it. The app does not take ownership of your plant archive. Optional backup and export process copies only to provide the action you selected.</p><p>The app’s interface, code, and branding are protected by applicable rights. Third-party components and example imagery have their own licenses, identified on the Acknowledgments page. Do not present bundled example photographs or generated frames as an authentic photographic record of a plant you observed.</p>'),
+                ("guidance", "Plans and care reminders", '<p>Interval, frame-count, finished-length, and storage suggestions are estimates based on the settings and records available. Actual plant movement, camera timing, device processing, free space, and lighting can differ. Check the plan and test the setup before relying on a long session.</p><p>Care reminders and logs organize information you enter. They do not identify a disease, establish that a treatment worked, or provide pesticide, fertilizer, toxicity, or professional horticultural advice. Follow the product label and appropriate professional guidance for any treatment. Do not infer a health assessment or a precise growth measurement from counts or highlight suggestions.</p>'),
+                ("capture", "Capture, reminders, and exports", '<p>Continuous interval capture requires the app to stay in the foreground. Locking the device, moving to another app, low power, heat, insufficient storage, or an interruption may stop the session. Local notification delivery depends on permissions and iOS settings and is not guaranteed at an exact time.</p><p>Calendar and Reminders exports create separate items. Review the destination, time zone, repeat rules, and permissions; later edits or deletions may not be reflected back in Plant Journal. Review a movie preview and its crop before exporting, particularly where new leaves approach the edge.</p>'),
+                ("ai", "Correction and AI-generated images", '<p>Exposure correction, color alignment, stabilization, crop, and speed changes alter the presentation of your sequence. They may reduce some artifacts and introduce others. Optional AI interpolation generates intermediate images rather than recovering a moment that was photographed. It can distort fine detail, moving leaves, occlusion, and transitions across long gaps.</p><p>Original photos remain the source record. Review generated sections and keep the available AI labels when representing the result to others. Do not use an AI-enhanced film as scientific, evidentiary, or diagnostic proof of an actual transition.</p>'),
+                ("backup", "Storage and backups", '<p>You are responsible for keeping copies of records you want to retain and checking a backup after export. Local recovery creates an independent copy; it does not merge changes across devices. Optional iCloud backup is off by default, uses your Apple Account’s storage, requires network/service availability, and is not real-time syncing.</p><p>Turning cloud backup off does not delete previous snapshots. Deleting all app cloud backups affects the app’s cloud copies across your devices; another device with backup still enabled may upload again. Exported files and system device backups are separate. See the Privacy Policy and Support page for details.</p>'),
+                ("availability", "Availability and responsibility", '<p>The current development version has no implemented in-app purchase or subscription. No download, price, release date, or feature availability is promised by this website. Supported devices, final availability, and any future purchase terms will be stated in the app’s actual App Store listing and purchase flow.</p><p>We aim to provide a useful, reliable tool, but cannot guarantee that every capture, reminder, export, or backup will complete without interruption or error. To the extent allowed by applicable law, the app and website are provided as available without additional warranties. Nothing here excludes liability, a statutory remedy, or a consumer right that cannot lawfully be excluded.</p>'),
+                ("contact", "Changes and contact", f'<p>We may update these terms as the product changes; the revised date will appear here. Material changes requiring notice or acceptance will be handled as required by applicable law. Privacy questions, support requests, or questions about these terms can be sent to <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>'),
+            ],
+        },
+        "support": {
+            "title": "A little help, when you need it", "intro": "Practical answers for a steady capture, a smoother film, and a well-kept archive.",
+            "sections": [
+                ("availability", "App availability", '<p>Plant Journal for iPhone and iPad is in preparation. This website does not yet provide an App Store download link. Screenshots show a development build and example or test content; they are not customer results.</p>'),
+                ("first-photo", "Start with a useful reference", '<p>Create a plant record, then take or import a first photo. Choose an uncluttered background and leave extra space around the plant for future growth and possible stabilization. Confirm the assisted outline rather than assuming every edge is correct.</p><p>If the outline is incomplete, improve contrast against the background, try another image, or use the translucent reference and adjustable pot guide. Repeated leaf shapes, shadows, and overlapping leaves can make automatic extraction difficult. Anchor your composition to the pot or another stable part of the scene.</p>'),
+                ("plan", "Choose a capture plan", '<p>Choose the subject and recording period, or work backward from the finished film length. The plan estimates the required photo count and interval. Use a short trial before a continuous session to check framing, available storage, lighting flicker, and processing time.</p><p>For steady artificial lighting, use supported exposure, focus, and white-balance locks after checking the scene. For changing natural light or day-to-night capture, avoid a lock that makes later frames unusably dark or bright. Device capabilities vary. Keep continuous interval capture in the foreground, with the device stable, powered as needed, and able to stay cool.</p>'),
+                ("reminders", "Photo and care reminders", '<p>Use the linked photo reminder from your shooting plan, or add care tasks such as watering, fertilizing, pruning, and treatments. The dates and recurrence should match the actual needs of your plant; a reminder is not a care prescription. Record completion so later reviews have context.</p><p>If reminders do not appear, check the app’s permission in Settings → Notifications, Focus settings, the reminder’s next date, and the device time zone. If you exported to Calendar or Reminders, also check that destination’s account and permissions. Export creates a separate copy; changing one app does not guarantee the other is updated.</p>'),
+                ("movie", "Make and check the film", '<p>Select your photos, choose the timing, and make a preview first. Start with original frames, then compare exposure smoothing, color alignment, plant color protection, and stabilization as needed. Select a stable reference region for deflicker; moving leaves or changing shadows can make that region unsuitable. Check the stabilization safe border to protect leaf tips.</p><p>AI interpolation is off by default. It can smooth a transition but may invent or distort detail, particularly across days. Try it on a short section and review the generated frames. Lower preview resolution does not mean the original photos were changed. On a long or hot-running export, reduce the selected section or output size, allow the device to cool, and try again. Keep enough free space for working files and the result.</p>'),
+                ("local-backup", "Back up and restore locally", '<p>Use the app’s local backup tool to save a .plantbackup archive to a destination you control. The app checks file integrity during recovery and shows a restore summary. Keep the exported archive intact and keep another copy somewhere safe if the records matter to you.</p><p>Recovery makes new independent local records; it does not overwrite existing plants or combine edits. If an archive cannot be opened, keep the original unchanged, check that it has finished downloading from your file provider, and retry with enough free space. Do not delete the source records until you have checked the restored copy.</p>'),
+                ("icloud", "Understand optional iCloud backup", '<p>iCloud backup starts off. Enable it in the app only when you want photos and records uploaded to your private iCloud storage. Check the successful-backup time and available snapshots while the app is in the foreground. If it is unavailable, verify your Apple Account, iCloud permissions and storage, connection, and that you are using a correctly configured device build.</p><p>This is not live syncing: restore a chosen snapshot manually, creating independent copies. Turning backup off keeps existing cloud copies. Normally three complete snapshots are retained per device, but cleanup failures and old shared media can use more space. To remove the app’s cloud archive, turn backup off on other devices, use Delete All Cloud Backups, and verify that it succeeds. Local and already-exported copies are separate.</p>'),
+                ("contact", "Contact support", f'<p>Email <a href="mailto:{CONTACT}">{CONTACT}</a>. Include your device model, iOS version, app version, what you were trying to do, and what happened. A short screen recording or screenshot can help if it does not expose private content.</p><div class="contact-box"><p><strong>Share the smallest example that explains the issue.</strong> Do not send a complete backup archive, private photos, Apple Account password, or verification code. If a file is necessary, we can discuss a suitable small example in the support conversation.</p></div><p>Support is handled by email. This website has no upload form, live chat, or user account system. Response times are not guaranteed.</p>'),
+            ],
+        },
+        "licenses": {
+            "title": "Open source & example imagery", "intro": "The sources and notices behind the local interpolation model and bundled example photographs.",
+            "sections": [
+                ("model", "Practical-RIFE interpolation model", '<p>The app bundles a converted Core ML version of <strong>Practical-RIFE 4.25-lite</strong> for optional on-device frame interpolation. The upstream project is <a href="https://github.com/hzwer/Practical-RIFE">hzwer/Practical-RIFE</a>. The model weights were obtained from the <a href="https://huggingface.co/Comfy-Org/frame_interpolation/tree/219da3c9d8c357ceaf457fc1d5932c6e861b8dee">Comfy-Org tensor-only mirror</a>, using rife_v4.25_lite.safetensors. No ComfyUI application code is included.</p><p>The upstream project identifies the linked trained models as covered by its MIT license. The copyright and permission notice are reproduced below. The app’s FP16 conversion uses a 512 × 512 model canvas with aspect-preserving preprocessing; a larger movie export does not imply that the model inferred native detail at that resolution. It runs locally and does not require a model download when the app is used.</p>'),
+                ("mit", "MIT license notice", "__MIT__"),
+                ("imagery", "Example photographs", '<p>The app and this website use bundled photographs from Unsplash for display and demonstration. They are labeled as examples and are not presented as a genuine growth sequence or a user testimonial. They are loaded from local files, without runtime requests to Unsplash.</p><ul><li><a href="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">Plant reference photograph</a></li><li><a href="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc">Second plant example photograph</a></li></ul><p>The files were obtained on October 24, 2026, under the <a href="https://unsplash.com/license">Unsplash License</a>. The screenshot on this website uses development/test data and the reference photograph to demonstrate the app’s actual alignment interface. Its plant record is not a real user case study.</p>'),
+                ("platform", "Platform and notices", f'<p>Apple, iPhone, iPad, iCloud, Photos, Calendar, Reminders, and Core ML refer to Apple products or technologies. This app is independently developed and is not endorsed by Apple, Unsplash, or the model authors.</p><p>For a question about an attribution or a license notice, email <a href="mailto:{CONTACT}">{CONTACT}</a>. The relevant third-party license controls the corresponding material; these website terms do not replace it.</p>'),
+            ],
+        },
+    },
+    "zh": {
+        "privacy": {
+            "title": "隐私政策", "intro": "说明植物照片、养护记录、可选 iCloud 备份，以及官网访问资料如何处理。",
+            "sections": [
+                ("scope", "适用范围与联系方式", f'<p>本政策适用于植物记录 iPhone 与 iPad App 及其官方网站。App 目前正在准备发布。如对隐私有疑问，或希望处理你主动提供给我们的资料，请联系 <a href="mailto:{CONTACT}">{CONTACT}</a>。</p><p>植物记录不要求注册 App 账号，不含广告、追踪或第三方分析 SDK。我们不运营独立的照片上传服务器。</p>'),
+                ("device", "设备上的资料", '<p>App 保存你添加或制作的内容，包括植物名称与设置、照片及其可用的日期或元数据、拍摄参照、观察笔记、养护历史与计划、影片设置、生成影片和备份信息，也会保存偏好设置，以及管理本地记录与可选云端快照所需的标识信息。</p><p>原始图片会完整保留，不清除其内嵌元数据。App 读取拍摄日期，不申请定位权限，但导入的原片仍可能含相机、设备、日期或地理位置等 EXIF 信息；这些信息可能随原片保留在导出归档或 iCloud 备份中，请在分享前检查来源文件。</p><p>图像分析、辅助对齐、画面矫正、精彩片段建议和可选 AI 补帧均在设备端运行。内置补帧模型在使用时不需要联网下载，也不调用第三方 AI 接口。AI 生成的中间画面不应当作实际观察到的植物变化。</p><p>App 会检查可用存储空间，并可能为预览、导出和备份保留必要的工作文件。在 App 中删除植物或照片，不会同时删除已导出到照片、文件、其他 App、系统设备备份或已有云端快照中的副本。</p>'),
+                ("permissions", "由你选择的权限", '<ul><li><strong>相机：</strong>在你发起拍摄时用于记录照片。</li><li><strong>照片：</strong>在你选择导入照片或保存导出结果时使用。访问范围遵循 iOS 的系统授权与照片选择器机制。</li><li><strong>通知：</strong>用于本地拍照和养护提醒；权限、专注模式与系统调度可能影响提醒送达。</li><li><strong>日历与提醒事项：</strong>在你主动导出计划或任务时使用，并在相关功能中申请权限。导出项是由对应 App 管理的独立副本，一处修改或删除不一定更新另一处。</li></ul><p>你可以在 iOS 设置中查看与调整权限。拒绝某项权限会影响相关功能，其他可用功能仍可使用。</p>'),
+                ("icloud", "可选的私人 iCloud 备份", '<p><strong>iCloud 备份默认关闭。</strong>你主动开启，且 iCloud 账户、连接与服务可用时，App 会将备份快照及相关媒体上传至你的 Apple 账户所对应的私人 CloudKit 数据库。备份包括照片、植物资料、笔记、养护内容、影片配方与归档所含的生成媒体，以及用于区分快照的设备标识、设备名称和备份时间。</p><p>该功能会联网并占用你的 iCloud 存储空间。Apple 会按照其政策处理 iCloud 服务与账户信息。App 自动备份在前台运行时触发，完成情况取决于网络、空间、账户和服务状态；它提供备份与主动恢复，不是持续的多设备双向同步。</p><p>旧版本清理成功时，通常为每台设备保留最近三份完整快照；清理失败可能暂时保留更多。为了避免误删其他设备仍会使用的文件，已失去引用的旧共享媒体暂不自动回收，可能继续占用 iCloud 空间，直到你明确删除本 App 的云端备份。</p><p><strong>关闭备份只停止后续上传，不会删除之前的云端副本。</strong>App 的“删除全部云端备份”操作会删除本 App 在各设备的云端快照与媒体，并关闭当前设备的自动备份。操作前请先关闭其他设备上的备份，否则它们可能再次上传；操作后请确认删除成功。Apple 基础设施中的删除与保留也受 Apple 服务政策约束。</p><p>主动恢复选中的快照会建立独立的本地副本，不会与现有记录合并。iOS 的系统设备备份与本 App 的可选备份功能相互独立。参阅 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>。</p>'),
+                ("sharing", "导出、分享与其他服务", '<p>你可以主动导出影片、保存本地备份文件，或通过系统分享菜单发送内容。照片、影片与归档可能包含你加入的植物名称、笔记、日期、图片元数据或其他个人内容，请在分享前检查内容与目的地。</p><p>选择云盘、照片服务、日历账户、邮件服务或其他 App 后，对方可能按照自身设置与政策保存或传输副本。植物记录无法收回已经分享的副本，也无法替你删除其他人设备上的文件。</p>'),
+                ("retention", "保存、删除与支持邮件", '<p>本地记录会保留至你删除内容或移除 App 本地资料。卸载 App 可能移除本地档案，但不能据此认定导出文件或 iCloud 快照已删除。请为希望保留的记录保存并核对备份。</p><p>如果你发送支持邮件，我们会收到你的邮箱地址、正文和你主动附上的文件，只用于答复和排查问题，并仅在支持工作及合理法律或安全目的所需期间保留，不用于广告。非必要时请勿发送完整植物归档或敏感照片。你可以通过本页邮箱申请删除支持往来，但仍需遵守适用的保留要求。</p><p>我们无法代为读取或删除仅在你设备或私人 iCloud 数据库中的植物记录，请使用 App 和 Apple 的账户与存储管理功能操作。根据所在地法律，你可能对我们持有的个人资料享有相应权利，可以通过邮箱联系行使。</p>'),
+                ("website", "关于这个网站", '<p>本站是由 GitHub Pages 托管的静态网站，不添加分析脚本、广告追踪器、第三方字体、社交嵌入组件、联系表单或我们自己的 Cookie，也不提供 App 内容上传功能。</p><p>GitHub 可能为提供与保护托管服务，处理 IP 地址、浏览器或设备信息、请求页面和访问时间等基础请求信息，具体见 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 通用隐私声明</a>。外部链接（包括邮件链接）由你选择的服务处理。</p>'),
+                ("changes", "政策更新", '<p>App 或资料处理方式变化时，我们会更新本页及上方日期。需要新权限或同意的变更，会通过相应 App 或系统流程申请。当前政策可从 App 与本网站访问。</p>'),
+            ],
+        },
+        "terms": {
+            "title": "使用条款", "intro": "关于植物记录、拍摄计划、生成影片和本网站的使用约定。",
+            "sections": [
+                ("scope", "使用植物记录", '<p>植物记录用于拍下植物变化、安排拍摄与养护记录，以及制作成长延时影片。本条款适用于 App 与本网站。请按照适用法律、你对内容享有的权利及平台规则使用。</p><p>通过 App Store 分发时，如未提供自定义最终用户许可协议，适用 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple 标准最终用户许可协议</a>。本页是与产品有关的补充说明，不能排除适用法律和强制性消费者权益。</p>'),
+                ("content", "你的照片与记录", '<p>你保留自己提供的照片、笔记等原创内容的权利，也有责任取得导入、处理与分享所需的许可。App 不取得你的植物档案的所有权。可选备份与导出仅为完成你选择的操作处理副本。</p><p>App 界面、代码与品牌受相应权利保护，第三方组件及示例照片适用各自许可证，详见开源与素材页。请勿把内置示例照片或生成帧表述为你真实观察并拍下的植物成长过程。</p>'),
+                ("guidance", "拍摄建议与养护提醒", '<p>间隔、照片数量、成片时长与存储空间建议，均依据已有设置与记录估算。实际植物运动、相机计时、设备处理、空间与光线可能不同。长期拍摄前，请检查计划并进行试拍。</p><p>养护提醒与日志用于整理你输入的安排，不提供病害诊断、疗效判定、农药或肥料用量、毒性判断或专业园艺建议。使用处理产品时，请遵循标签及适当的专业指导。记录数量或精彩片段候选不代表健康评估或精确生长测量。</p>'),
+                ("capture", "拍摄、提醒与导出", '<p>持续间隔拍摄需要 App 保持前台。锁屏、切到其他 App、低电量、发热、存储不足或系统中断都可能停止拍摄。本地提醒受授权与 iOS 设置影响，不能保证精确到某一时刻送达。</p><p>导出到日历与提醒事项会建立独立项目，请检查目的日历或清单、时区、重复规则及权限。后续修改或删除不一定同步回植物记录。导出影片前请核对预览和裁切边缘，尤其注意靠近边界的新叶。</p>'),
+                ("ai", "矫正与 AI 生成画面", '<p>曝光矫正、颜色对齐、稳像裁切和变速会改变序列的呈现，可能减少某些瑕疵，也可能引入其他问题。可选 AI 补帧会生成中间画面，不是找回真实拍下的瞬间；细节、运动叶片、遮挡与长期缺拍之间的过渡可能失真。</p><p>原始照片才是来源记录。请检查生成片段，并在向他人呈现时保留可用的 AI 标识。不要将经过 AI 增强的影片作为真实过渡的科学、证据或诊断依据。</p>'),
+                ("backup", "存储与备份", '<p>希望长期保留的记录，需要你保存副本并在导出后核对。本地恢复会建立独立副本，不会合并不同设备的修改。可选 iCloud 备份默认关闭，占用你的 Apple 账户空间，依赖网络与服务可用性，不提供实时同步。</p><p>关闭云端备份不删除旧快照。删除全部 App 云端备份会影响各设备的本 App 云端副本，仍开启备份的其他设备可能再次上传。导出文件与系统设备备份独立管理，详情见隐私政策与使用支持页。</p>'),
+                ("availability", "可用性与责任", '<p>目前开发版本未实现 App 内购买或订阅。本网站不承诺下载、价格、发布日期或最终功能可用性；设备支持、实际发布情况和未来如有的购买条款，以真实 App Store 页面与购买流程为准。</p><p>我们努力提供有用、可靠的工具，但无法保证每次拍摄、提醒、导出或备份都不中断或出错。在适用法律允许范围内，App 与网站按可用状态提供，不额外作出保证。本条款不能排除依法不可排除的责任、法定救济或消费者权利。</p>'),
+                ("contact", "更新与联系", f'<p>随着产品变化，我们可能更新本条款并修改日期。需要通知或接受的重要变更，会按照适用法律处理。关于条款、隐私或使用支持的问题，请联系 <a href="mailto:{CONTACT}">{CONTACT}</a>。</p>'),
+            ],
+        },
+        "support": {
+            "title": "记录路上，需要一点帮助", "intro": "从拍稳一张照片，到导出一段影片，再到好好保存这份档案。",
+            "sections": [
+                ("availability", "App 发布情况", '<p>植物记录 iPhone 与 iPad 版本正在准备发布，本站暂未提供 App Store 下载链接。官网截图为开发版本，使用示例或测试内容，不代表真实用户成果。</p>'),
+                ("first-photo", "留下一个好用的首张参照", '<p>建立植物档案后，拍摄或导入第一张照片。尽量选择简洁背景，并为后续生长与可能的稳像裁切留出空间。请确认辅助轮廓，避免默认所有边缘都正确。</p><p>如果轮廓不完整，可以改善植物与背景的对比、换一张照片，或使用半透明参照与可调整的花盆框。相似叶片、阴影与叶片重叠可能增加提取难度。构图时尽量对齐花盆或场景中不容易变化的地方。</p>'),
+                ("plan", "选择与检查拍摄计划", '<p>可以按拍摄类型与记录周期制定计划，也能根据成片时长反推照片数量与间隔。持续拍摄前，建议先做短试拍，检查构图、可用空间、灯光闪烁与处理时间。</p><p>固定人工光照下，可以根据设备支持情况锁定曝光、对焦与白平衡；自然光变化或跨昼夜拍摄，则需避免锁定后使后续画面过亮或过暗。不同设备支持不同。持续间隔拍摄时请保持 App 前台，固定设备，按需接电，并留意散热。</p>'),
+                ("reminders", "拍照提醒与养护安排", '<p>可以从拍摄计划联动拍照提醒，也能安排浇水、施肥、修剪、打药等养护任务。日期与重复周期应依据植物实际需求设定，提醒本身不代表养护处方。完成后留下记录，回顾时更有上下文。</p><p>收不到提醒时，请检查“设置 → 通知”中的 App 权限、专注模式、任务下次日期和设备时区。导出到日历或提醒事项后，还需检查对应账户与权限。导出建立独立副本，不能假定修改一处就会自动更新另一处。</p>'),
+                ("movie", "先预览，再制作影片", '<p>选好照片与节奏后，先制作预览。可以从原片效果开始，逐项比较曝光平滑、颜色对齐、植物颜色保护与稳像。去闪烁参照区域应尽量稳定，移动叶片或变化阴影可能不适合作为参照；稳像时请检查安全边界，保留叶尖。</p><p>AI 补帧默认关闭，可能使过渡更顺，也可能推测或扭曲细节，尤其是跨天照片。建议先试一小段并检查生成画面。低分辨率预览不会改写原始照片。长片导出过热或失败时，可以缩短选片范围、降低输出尺寸、让设备冷却后重试，并为工作文件与成片留够空间。</p>'),
+                ("local-backup", "本地备份与恢复", '<p>通过 App 的本地备份工具，将 .plantbackup 归档保存到你能管理的位置。恢复时会检查文件完整性并展示恢复摘要。请保持归档完整；重要记录建议另存一份可靠副本。</p><p>恢复会建立新的独立本地记录，不覆盖已有植物，也不合并不同修改。如果归档无法打开，请保留原文件，确认它已从文件服务完整下载，并在空间充足时重试。核对恢复结果之前，请勿删除来源记录。</p>'),
+                ("icloud", "理解可选 iCloud 备份", '<p>iCloud 备份默认关闭。希望将照片与资料上传至私人 iCloud 空间时，再在 App 中开启；在 App 前台检查成功备份时间与可用快照。不可用时，请检查 Apple 账户、iCloud 权限与空间、网络，以及是否使用已正确配置云端能力的设备版本。</p><p>这不是实时同步，需要主动选择快照恢复，并建立独立副本。关闭备份会保留已有云端内容。通常每设备保留三份完整快照，但清理失败与旧共享媒体可能占用更多空间。清空时，请先关闭其他设备备份，再操作“删除全部云端备份”，并核对成功状态。本地资料和已导出副本另外管理。</p>'),
+                ("contact", "联系支持", f'<p>发送邮件至 <a href="mailto:{CONTACT}">{CONTACT}</a>。请描述设备型号、iOS 版本、App 版本、操作步骤与实际结果；在不暴露隐私的前提下，可以提供简短录屏或截图。</p><div class="contact-box"><p><strong>只提供能解释问题的最小示例。</strong>请勿直接发送完整备份、私密照片、Apple 账户密码或验证码。如果排查确实需要文件，可以先在支持邮件中讨论合适的小样本。</p></div><p>支持通过邮件处理，本站没有上传表单、在线聊天或用户账号系统，不能保证固定回复时限。</p>'),
+            ],
+        },
+        "licenses": {
+            "title": "开源组件与示例素材", "intro": "关于端侧补帧模型、示例照片及其来源和授权说明。",
+            "sections": [
+                ("model", "Practical-RIFE 补帧模型", '<p>App 内置 <strong>Practical-RIFE 4.25-lite</strong> 的 Core ML 转换版本，用于可选端侧补帧。上游项目为 <a href="https://github.com/hzwer/Practical-RIFE">hzwer/Practical-RIFE</a>；权重来自 <a href="https://huggingface.co/Comfy-Org/frame_interpolation/tree/219da3c9d8c357ceaf457fc1d5932c6e861b8dee">Comfy-Org 纯张量镜像</a>中的 rife_v4.25_lite.safetensors，不含 ComfyUI 应用代码。</p><p>上游将链接的训练模型声明为适用其 MIT 许可证，版权与许可全文如下。App 的 FP16 转换使用 512 × 512 模型画布及保留比例的预处理，因此更大的影片输出尺寸不代表模型生成了对应原生分辨率的细节。模型随 App 内置，使用时无需联网下载。</p>'),
+                ("mit", "MIT 许可声明", "__MIT__"),
+                ("imagery", "示例照片", '<p>App 与官网使用随包提供的 Unsplash 照片作展示与说明，并标注为示例，不表述为真实生长序列或用户评价。照片从本地文件读取，不在运行时请求 Unsplash。</p><ul><li><a href="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">植物参照示例照片</a></li><li><a href="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc">第二张植物示例照片</a></li></ul><p>照片于 2026 年 10 月 24 日依据 <a href="https://unsplash.com/license">Unsplash License</a>获取。官网截图用开发与测试资料及参照照片，展示 App 实际的对齐界面；其中植物档案不是用户案例。</p>'),
+                ("platform", "平台名称与声明", f'<p>Apple、iPhone、iPad、iCloud、照片、日历、提醒事项与 Core ML 指代 Apple 的产品或技术。本 App 独立开发，不代表获得 Apple、Unsplash 或模型作者的背书。</p><p>如对署名或许可声明有疑问，请联系 <a href="mailto:{CONTACT}">{CONTACT}</a>。相应第三方素材以其自身许可证为准，本站条款不替代该许可证。</p>'),
+            ],
+        },
+    },
+}
