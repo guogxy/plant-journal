@@ -32,7 +32,7 @@ Website copy truthfully states that the app is in preparation. No App Store ID, 
 
 The user-approved simple production icon is installed at **`assets/app-icon.png`** and is used by each localized page header, favicon, and Apple touch icon. It is an exact copy of `design/icon-review/plant-journal-simple-v1.png`, with SHA-256 `4dc20207acaa8f5a7eb5148633f206278be1003aa5451ca9c3f157e75d4193fd`. The builder includes these icon references when the file exists. Use only the approved production asset for subsequent updates.
 
-The English page currently displays the actual Chinese development screenshot, explicitly labeled. When an equivalent real English screenshot is available, copy it to **`assets/reference-screen-en.png`** and regenerate; the builder selects it for the English page and updates the caption. The current screenshot dimensions are 1206 × 2622; update the dimensions in the generator if the replacement differs. Neither the screenshot nor bundled sample imagery is described as a user’s genuine growth result.
+The English page uses **`assets/reference-screen-en.png`**, captured from the actual English app while importing the bundled example and extracting its outline. The Chinese page uses the corresponding Chinese development screenshot. Both are explicitly labeled as example material. Dimensions are 1206 × 2622; update them in the generator if a replacement differs. Neither screenshot nor bundled sample imagery is described as a user’s genuine growth result.
 
 ## Content verification, 2026-10-26
 
