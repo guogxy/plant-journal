@@ -5,7 +5,7 @@ from pathlib import Path
 import argparse
 import sys
 
-from content import CONTACT, HOME, PAGES, UI, UPDATED
+from content import APP_STORE_URL, CONTACT, HOME, PAGES, UI, UPDATED
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://guogxy.github.io/plant-journal/"
@@ -94,7 +94,7 @@ def home(locale):
     body = f'''<main id="main">
 <div class="wrap"><section class="hero" aria-labelledby="hero-title">
 <div class="hero-copy"><p class="eyebrow">{c['eyebrow']}</p><h1 id="hero-title">{c['headline']}</h1><p>{c['intro']}</p>
-<div class="actions"><a class="button" href="#workflow">{c['cta']}</a><a class="button secondary" href="support/">{c['secondary']}</a></div><span class="status">{t['status']} · iPhone & iPad</span></div>
+<div class="actions"><a class="button" href="{APP_STORE_URL}">{c['cta']}</a><a class="button secondary" href="support/">{c['secondary']}</a></div><span class="status">{t['status']} · iPhone & iPad</span></div>
 <figure class="hero-visual"><div class="photo-stage"><img src="../assets/reference-plant.jpg" width="900" height="676" alt="{c['photo_alt']}" fetchpriority="high"><div class="viewfinder" aria-hidden="true"></div><div class="frame-label" aria-hidden="true"><div><strong>{c['frame_title']}</strong><span>{c['frame_sub']}</span></div><i class="crosshair"></i></div></div><figcaption class="visual-caption">{c['photo_caption']}</figcaption></figure>
 </section><div class="intro-band">{bands}</div>
 <section class="workflow" id="workflow" aria-labelledby="workflow-title"><div class="section-heading"><div><p class="eyebrow">{c['workflow_label']}</p><h2 id="workflow-title">{c['workflow_title']}</h2></div><p>{c['workflow_intro']}</p></div><div class="workflow-grid">{steps}</div></section></div>
@@ -127,7 +127,7 @@ def policy(locale, page):
 def entry_page():
     icon = '<link rel="icon" type="image/png" href="assets/app-icon.png"><link rel="apple-touch-icon" href="assets/app-icon.png">' if ICON.exists() else ''
     brand = '<img src="assets/app-icon.png" width="64" height="64" alt="" style="border-radius:16px;margin-bottom:25px">' if ICON.exists() else ''
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Plant Journal · 植物记录</title><meta name="description" content="Plant Journal for iPhone and iPad. 植物记录，留下一段看得见的成长。"><link rel="canonical" href="{BASE}"><link rel="alternate" hreflang="en" href="{url('en')}"><link rel="alternate" hreflang="zh-Hans" href="{url('zh')}"><link rel="alternate" hreflang="x-default" href="{BASE}"><meta name="theme-color" content="#f7f8f1"><link rel="stylesheet" href="assets/site.css">{icon}</head><body><main id="main" class="wrap chooser"><div>{brand}<p class="eyebrow">Plant Journal · 植物记录</p><h1>Slow growth.<br>A story worth keeping.</h1><p lang="zh-Hans">慢慢生长，好好留下。</p><div class="actions"><a class="button" href="en/" lang="en">English</a><a class="button secondary" href="zh/" lang="zh-Hans">简体中文</a></div><p class="visual-caption">iPhone & iPad · Release in preparation / 正在准备发布</p></div></main></body></html>\n'''
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Plant Journal · 植物记录</title><meta name="description" content="Plant Journal for iPhone and iPad. 植物记录，留下一段看得见的成长。"><link rel="canonical" href="{BASE}"><link rel="alternate" hreflang="en" href="{url('en')}"><link rel="alternate" hreflang="zh-Hans" href="{url('zh')}"><link rel="alternate" hreflang="x-default" href="{BASE}"><meta name="theme-color" content="#f7f8f1"><link rel="stylesheet" href="assets/site.css">{icon}</head><body><main id="main" class="wrap chooser"><div>{brand}<p class="eyebrow">Plant Journal · 植物记录</p><h1>Slow growth.<br>A story worth keeping.</h1><p lang="zh-Hans">慢慢生长，好好留下。</p><div class="actions"><a class="button" href="en/" lang="en">English</a><a class="button secondary" href="zh/" lang="zh-Hans">简体中文</a></div><p class="visual-caption">iPhone & iPad · {UI["en"]["status"]} / {UI["zh"]["status"]}</p></div></main></body></html>\n'''
 
 
 def build():

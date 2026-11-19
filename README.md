@@ -28,7 +28,7 @@ Publish **this folder’s contents**, not the parent native app repository. The 
 
 ## Release and icon status
 
-Website copy truthfully states that the app is in preparation. No App Store ID, purchase offer, price, review, customer result, or release date is assumed. Add the real download URL only after it is supplied and verified.
+The localized home and support pages link to the verified U.S. App Store listing (app ID 6827551558). Update the listing URL in `tools/content.py` if needed; do not infer availability in other storefronts.
 
 The user-approved simple production icon is installed at **`assets/app-icon.png`** and is used by each localized page header, favicon, and Apple touch icon. It is an exact copy of `design/icon-review/plant-journal-simple-v1.png`, with SHA-256 `4dc20207acaa8f5a7eb5148633f206278be1003aa5451ca9c3f157e75d4193fd`. The builder includes these icon references when the file exists. Use only the approved production asset for subsequent updates.
 

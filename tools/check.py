@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Publication checks: every locale, local URL, anchor, metadata and required notice."""
 from html.parser import HTMLParser
+from content import APP_STORE_URL
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 import subprocess
@@ -40,6 +41,8 @@ for path, page in pages.items():
     rel = path.relative_to(ROOT)
     for href in page.links:
         parsed = urlparse(href)
+        if parsed.hostname == "apps.apple.com":
+            require(href == APP_STORE_URL, f"{rel}: unexpected App Store URL {href}")
         if parsed.scheme or parsed.netloc:
             require(parsed.scheme in ("https", "mailto"), f"{rel}: nonsecure/unexpected URL {href}")
             continue
@@ -78,7 +81,7 @@ for path, page in pages.items():
         require(any(t == "a" and a.get("class") == "language" for t, a in page.tags), f"{rel}: missing language switch")
         require(any(t == "meta" and a.get("name") == "description" and a.get("content") for t, a in page.tags), f"{rel}: no description")
     source = path.read_text()
-    for forbidden in ("apps.apple.com/", "APP_STORE_ID", "example.com", "Lorem ipsum", "永不离开设备", "无需账号，原片保存在设备上", "google-analytics", "gtag("):
+    for forbidden in ("APP_STORE_ID", "example.com", "Lorem ipsum", "永不离开设备", "无需账号，原片保存在设备上", "google-analytics", "gtag("):
         require(forbidden not in source, f"{rel}: unexpected placeholder or unverified claim {forbidden}")
 
 expected_pages = {ROOT / locale / page / "index.html" for locale in ("en", "zh") for page in ("", "privacy", "terms", "support", "licenses")}
@@ -88,6 +91,8 @@ sitemap = ET.parse(ROOT / "sitemap.xml")
 locations = [node.text for node in sitemap.findall(".//{*}loc")]
 require(len(locations) == 11 and all(u.startswith(BASE) for u in locations), "Sitemap does not contain 11 correct URLs")
 for locale in ("en", "zh"):
+    for path in (ROOT / locale / "index.html", ROOT / locale / "support/index.html"):
+        require(APP_STORE_URL in pages[path.resolve()].links, f"{path.relative_to(ROOT)}: missing App Store link")
     privacy = (ROOT / locale / "privacy/index.html").read_text()
     require("EXIF" in privacy and "CloudKit" in privacy and "GitHub" in privacy, f"{locale}: incomplete privacy data flows")
     license_page = (ROOT / locale / "licenses/index.html").read_text()

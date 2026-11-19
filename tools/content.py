@@ -1,6 +1,7 @@
 """Reviewed bilingual copy for the static Plant Journal website."""
 
 CONTACT = "gggxxxyyyy@gmail.com"
+APP_STORE_URL = "https://apps.apple.com/us/app/plant-journal-growth-camera/id6827551558"
 UPDATED = {"en": "October 26, 2026", "zh": "2026 年 10 月 26 日"}
 
 UI = {
@@ -9,7 +10,7 @@ UI = {
         "nav": [("workflow", "The workflow"), ("editing", "The film"), ("data", "Your records")],
         "support": "Support", "privacy": "Privacy", "terms": "Terms", "licenses": "Acknowledgments",
         "footer": "A little attention. A lasting record.", "copyright": "Plant Journal · iPhone & iPad",
-        "status": "Release in preparation", "toc": "On this page", "updated": "Last updated",
+        "status": "Available on the U.S. App Store", "toc": "On this page", "updated": "Last updated",
         "site_note": "Static website hosted on GitHub Pages.",
     },
     "zh": {
@@ -17,7 +18,7 @@ UI = {
         "nav": [("workflow", "记录方式"), ("editing", "成长影片"), ("data", "资料与备份")],
         "support": "使用支持", "privacy": "隐私政策", "terms": "使用条款", "licenses": "开源与素材",
         "footer": "留心一片新叶，留下这一段成长。", "copyright": "植物记录 · iPhone 与 iPad",
-        "status": "正在准备发布", "toc": "本页内容", "updated": "最后更新",
+        "status": "已在美区 App Store 上架", "toc": "本页内容", "updated": "最后更新",
         "site_note": "本站由 GitHub Pages 提供静态托管。",
     },
 }
@@ -25,11 +26,11 @@ UI = {
 HOME = {
     "en": {
         "title": "Plant Journal — Make slow growth visible",
-        "description": "Return to the same view, record plant care, and turn your plant photos into a considered time-lapse. An app for iPhone and iPad, currently in preparation.",
+        "description": "Return to the same view, record plant care, and turn your plant photos into a considered time-lapse. Available for iPhone and iPad on the U.S. App Store.",
         "eyebrow": "For the changes you almost miss",
         "headline": "Slow growth.<br>A story worth keeping.",
         "intro": "Come back to the same view. Notice the new leaf. Turn a little attention, day after day, into a film of your plant’s growth.",
-        "cta": "Explore the workflow", "secondary": "Get help",
+        "cta": "Download on the App Store", "secondary": "Get help",
         "frame_title": "Find your way back to the frame", "frame_sub": "A reference for your next photo",
         "photo_alt": "Green plant leaves against a pale background, with an illustrative reference frame",
         "photo_caption": "Example photograph from Unsplash. Reference frame illustrated for this website; this is not a growth sequence.",
@@ -67,15 +68,15 @@ HOME = {
             ("Sharing happens when you choose", "Calendar and Reminders export, video sharing, and backup destinations are initiated by you. Other apps and services then handle the copies you give them."),
         ],
         "data_link": "Read the full privacy policy", "closing_label": "Made for patient observation",
-        "closing_title": "Make room for a little growth.", "closing_body": "Plant Journal for iPhone and iPad is in preparation. For questions about the app, contact support.", "closing_cta": "Contact support",
+        "closing_title": "Make room for a little growth.", "closing_body": "Plant Journal is available for iPhone and iPad on the U.S. App Store. For questions about the app, contact support.", "closing_cta": "Contact support",
     },
     "zh": {
         "title": "植物记录 — 把慢慢生长，留成一段影片",
-        "description": "用熟悉的机位拍下植物的变化，记录养护与日常，再把照片制作成可控制节奏的成长延时。适用于 iPhone 与 iPad，正在准备发布。",
+        "description": "用熟悉的机位拍下植物的变化，记录养护与日常，再把照片制作成可控制节奏的成长延时。适用于 iPhone 与 iPad，已在美区 App Store 上架。",
         "eyebrow": "为那些差一点错过的变化",
         "headline": "慢慢生长，<br>好好留下。",
         "intro": "回到熟悉的机位，发现刚展开的新叶。把一天一点的留心，接成一段看得见的成长。",
-        "cta": "看看怎样记录", "secondary": "使用支持",
+        "cta": "在 App Store 下载", "secondary": "使用支持",
         "frame_title": "让下一张，回到熟悉的位置", "frame_sub": "留一个参照，等下一次变化",
         "photo_alt": "浅色背景中的绿色植物，叠加用于说明的拍摄参照框",
         "photo_caption": "Unsplash 示例照片，参照框为官网功能示意；这不是植物生长序列。",
@@ -113,7 +114,7 @@ HOME = {
             ("分享，在你主动操作之后", "日历与提醒事项导出、影片分享和备份保存位置，由你发起选择。副本交给其他 App 或服务后，也由其继续管理。"),
         ],
         "data_link": "查看完整隐私政策", "closing_label": "为耐心观察而做",
-        "closing_title": "给一点生长，留一点时间。", "closing_body": "植物记录 iPhone 与 iPad 版本正在准备发布。关于使用与资料处理的问题，可以联系支持。", "closing_cta": "联系使用支持",
+        "closing_title": "给一点生长，留一点时间。", "closing_body": "植物记录 iPhone 与 iPad 版本已在美区 App Store 上架。关于使用与资料处理的问题，可以联系支持。", "closing_cta": "联系使用支持",
     },
 }
 
@@ -148,7 +149,7 @@ PAGES = {
         "support": {
             "title": "A little help, when you need it", "intro": "Practical answers for a steady capture, a smoother film, and a well-kept archive.",
             "sections": [
-                ("availability", "App availability", '<p>Plant Journal for iPhone and iPad is in preparation. This website does not yet provide an App Store download link. Screenshots show a development build and example or test content; they are not customer results.</p>'),
+                ("availability", "App availability", f'<p>Plant Journal for iPhone and iPad is available on the <a href="{APP_STORE_URL}">U.S. App Store</a>. Screenshots show a development build and example or test content; they are not customer results.</p>'),
                 ("first-photo", "Start with a useful reference", '<p>Create a plant record, then take or import a first photo. Choose an uncluttered background and leave extra space around the plant for future growth and possible stabilization. Confirm the assisted outline rather than assuming every edge is correct.</p><p>If the outline is incomplete, improve contrast against the background, try another image, or use the translucent reference and adjustable pot guide. Repeated leaf shapes, shadows, and overlapping leaves can make automatic extraction difficult. Anchor your composition to the pot or another stable part of the scene.</p>'),
                 ("plan", "Choose a capture plan", '<p>Choose the subject and recording period, or work backward from the finished film length. The plan estimates the required photo count and interval. Use a short trial before a continuous session to check framing, available storage, lighting flicker, and processing time.</p><p>For steady artificial lighting, use supported exposure, focus, and white-balance locks after checking the scene. For changing natural light or day-to-night capture, avoid a lock that makes later frames unusably dark or bright. Device capabilities vary. Keep continuous interval capture in the foreground, with the device stable, powered as needed, and able to stay cool.</p>'),
                 ("reminders", "Photo and care reminders", '<p>Use the linked photo reminder from your shooting plan, or add care tasks such as watering, fertilizing, pruning, and treatments. The dates and recurrence should match the actual needs of your plant; a reminder is not a care prescription. Record completion so later reviews have context.</p><p>If reminders do not appear, check the app’s permission in Settings → Notifications, Focus settings, the reminder’s next date, and the device time zone. If you exported to Calendar or Reminders, also check that destination’s account and permissions. Export creates a separate copy; changing one app does not guarantee the other is updated.</p>'),
@@ -198,7 +199,7 @@ PAGES = {
         "support": {
             "title": "记录路上，需要一点帮助", "intro": "从拍稳一张照片，到导出一段影片，再到好好保存这份档案。",
             "sections": [
-                ("availability", "App 发布情况", '<p>植物记录 iPhone 与 iPad 版本正在准备发布，本站暂未提供 App Store 下载链接。官网截图为开发版本，使用示例或测试内容，不代表真实用户成果。</p>'),
+                ("availability", "App 发布情况", f'<p>植物记录 iPhone 与 iPad 版本已在<a href="{APP_STORE_URL}">美区 App Store</a>上架。官网截图为开发版本，使用示例或测试内容，不代表真实用户成果。</p>'),
                 ("first-photo", "留下一个好用的首张参照", '<p>建立植物档案后，拍摄或导入第一张照片。尽量选择简洁背景，并为后续生长与可能的稳像裁切留出空间。请确认辅助轮廓，避免默认所有边缘都正确。</p><p>如果轮廓不完整，可以改善植物与背景的对比、换一张照片，或使用半透明参照与可调整的花盆框。相似叶片、阴影与叶片重叠可能增加提取难度。构图时尽量对齐花盆或场景中不容易变化的地方。</p>'),
                 ("plan", "选择与检查拍摄计划", '<p>可以按拍摄类型与记录周期制定计划，也能根据成片时长反推照片数量与间隔。持续拍摄前，建议先做短试拍，检查构图、可用空间、灯光闪烁与处理时间。</p><p>固定人工光照下，可以根据设备支持情况锁定曝光、对焦与白平衡；自然光变化或跨昼夜拍摄，则需避免锁定后使后续画面过亮或过暗。不同设备支持不同。持续间隔拍摄时请保持 App 前台，固定设备，按需接电，并留意散热。</p>'),
                 ("reminders", "拍照提醒与养护安排", '<p>可以从拍摄计划联动拍照提醒，也能安排浇水、施肥、修剪、打药等养护任务。日期与重复周期应依据植物实际需求设定，提醒本身不代表养护处方。完成后留下记录，回顾时更有上下文。</p><p>收不到提醒时，请检查“设置 → 通知”中的 App 权限、专注模式、任务下次日期和设备时区。导出到日历或提醒事项后，还需检查对应账户与权限。导出建立独立副本，不能假定修改一处就会自动更新另一处。</p>'),
